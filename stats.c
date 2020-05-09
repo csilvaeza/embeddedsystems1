@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <stats.c> 
- * @brief <Analyse unsigned char array data items for coursera course assesment>
+ * @file stats.c 
+ * @brief Analyse unsigned char array data items for coursera course assesment
  *
- * <Reports maximum, minimum, mean and median of the data set>
+ * Reports maximum, minimum, mean and median of the data set
  *
- * @author <csilvaeza>
- * @date <May 6, 2020>
+ * @author csilvaeza
+ * @date May 7, 2020
  *
  */
 

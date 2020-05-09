@@ -9,13 +9,14 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h 
+ * @brief Header file of stats.c
  *
- * <Add Extended Description Here>
+ * This header contains function declarations and function comments to analyse
+ * and print the statistics an array, such as minimum, maximum, mean and media.
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author csilvaeza
+ * @date May 7, 2020
  *
  */
 #ifndef __STATS_H__
@@ -23,24 +24,86 @@
 
 /* Add Your Declarations and Function Comments here */ 
 #include <stdint.h>
+
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief Prints statistics of an array
  *
- * <Add Extended Description Here>
+ * Given an array and a length prints statistics of an array, including
+ * minimum, maximum, mean, median.
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
+ * @param arreglo The array to analyse
+ * @param n_datos The length of the array
  */
 void print_statistics(unsigned char arreglo[], uint16_t n_datos);
+
+/**
+ * @brief Prints array to the screen
+ *
+ * Given an array and a length, prints the array to the screen
+ *
+ *
+ * @param arreglo The array to analyse
+ * @param n_datos The length of the array
+ */
+
 void print_array(unsigned char arreglo[], uint16_t n_datos);
+/**
+ * @brief Return the mean
+ *
+ * Given an array and a length, returns the mean
+ *
+ * @param arreglo The array to analyse
+ * @param n_datos The length of the array
+ *
+ * @return The mean of the array 
+ */
+
 unsigned char find_mean(unsigned char arreglo[], uint16_t n_datos);
+/**
+ * @brief Return the median value
+ *
+ * Given an array and a length, returns the median value
+ *
+ * @param arreglo The array to analyse
+ * @param n_datos The length of the array
+ *
+ * @return The median of the array 
+ */
 unsigned char find_median(unsigned char arreglo[], uint16_t n_datos);
+/**
+ * @brief Return the maximum.
+ *
+ * Given an array and a length, returns the maximum.
+ *
+ * @param arreglo The array to analyse
+ * @param n_datos The length of the array
+ *
+ * @return The maximum of the array 
+ */
 unsigned char find_maximum(unsigned char arreglo[], uint16_t n_datos);
+
+/**
+ * @brief Return the minimum
+ *
+ * Given an array and a length, returns the minimum
+ *
+ * @param arreglo The array to analyse
+ * @param n_datos The length of the array
+ *
+ * @return The minimum of the array 
+ */
+
 unsigned char find_minimum(unsigned char arreglo[], uint16_t n_datos);
+
+/**
+ * @brief Sorts an array from largest to smallest
+ *
+ * Given an array and a length, sorts the array. The zeroth Element should be
+ * the largest value, and the last element (n-1) shoud be the smallest value.
+ *
+ * @param arreglo The array to analyse
+ * @param n_datos The length of the array
+ */
 void  sort_array(unsigned char arreglo[], uint16_t n_datos);
 
 #endif /* __STATS_H__ */
